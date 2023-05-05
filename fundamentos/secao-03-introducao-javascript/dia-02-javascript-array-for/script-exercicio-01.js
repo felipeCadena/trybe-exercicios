@@ -11,7 +11,7 @@
 // let soma = 0;
 
 // for (let index = 0; index < numbers.length; index += 1) {
-//   soma = soma + numbers[index];
+//   soma += numbers[index];
 // }
 
 // console.log(soma)
@@ -27,7 +27,7 @@
 //   soma += numbers[index];
 // }
 
-// let media = (soma / numbers.length);
+// let media = soma / numbers.length;
 
 // console.log(media);
 
@@ -53,17 +53,17 @@
 
 // Utilizando for, descubra o maior valor contido no array e imprima-o.
 
-// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-// let maiorNumero = numbers[0];
+let maiorNumero = numbers[0];
 
-// for (let index = 1; index < numbers.length; index += 1) {
-//   if (numbers[index] > maiorNumero) {
-//     maiorNumero = numbers[index];
-//   }
-// }
+for (let index = 1; index < numbers.length; index += 1) {
+  if (numbers[index] > maiorNumero) {
+    maiorNumero = numbers[index];
+  }
+}
 
-// console.log(maiorNumero)
+console.log(maiorNumero)
 
 
 // Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
@@ -103,18 +103,18 @@
 
 // Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
 
-let numeros = [];
+// let numeros = [];
 
-for (let index = 0; index < 25; index += 1) {
-  numeros.push(index);    
-}
+// for (let index = 0; index < 25; index += 1) {
+//   numeros.push(index);    
+// }
 
-console.log(numeros)
+// console.log(numeros)
 
 
-for (let index = 0; index < numeros.length; index += 1) {
-  console.log(numeros[index] / 2);
-};
+// for (let index = 0; index < numeros.length; index += 1) {
+//   console.log(numeros[index] / 2);
+// };
 
 
 
