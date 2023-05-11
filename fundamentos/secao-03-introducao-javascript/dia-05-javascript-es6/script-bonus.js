@@ -32,3 +32,5 @@ const minhasSkills = (substituaX) => {
 }
 
 console.log(minhasSkills(substituaX('Felipe')))
+
+
