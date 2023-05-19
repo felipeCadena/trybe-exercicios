@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Faça seu cadastro e aproveite a Manga Universe</h1>
+
+  <form action="" method="GET" enctype="multipart/form-data">
+
+  <label for="nome">Nome social: <input type="text" placeholder="Digite seu nome social" required name="nome" id="nome"></label>
+  <br>
+  <br>
+  <label for="">Estado onde você mora:
+    <select name="estado" id="input-estado">
+      <option value="sp">São Paulo</option>
+      <option value="rj" selected>Rio de Janeiro</option>
+      <option value="mg">Minas Gerais</option>
+      <option value="es">Espirito Santo</option>
+    </select>
+  </label>
+  <br>
+  <p>Selecione seu foto de perfil</p>
+  <input type="file" name="foto" id="foto-perfil">
+  <br>
+  <br>
+  <p>Mangá favorito</p>
+  <label for="manga1">
+    <input type="radio" id="manga1" name="manga-favorito" value="one-piece" checked>One Piece
+  </label>
+  <label for="manga2">
+    <input type="radio" id="manga2" name="manga-favorito" value="naruto">Naruto
+  </label>
+  <label for="manga3">
+    <input type="radio" id="manga3" name="manga-favorito" value="bnh">My Hero Academia
+  </label>
+  <label for="manga4">
+    <input type="radio" id="manga4" name="manga-favorito" value="hxh">HxH
+  </label>
+  <label for="manga5">
+    <input type="radio" id="manga5" name="manga-favorito" value="demon">Demon Slayer
+  </label>
+  <br>
+  <br>
+  <p>Escreve algo sobre você</p>
+  <textarea name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+  <br>
+  <br>
+  <label for="email">E-mail: <input type="email" placeholder="Digite seu e-mail" required id="email" name="email"></label>
+  <br>
+  <br>
+  <label for="senha">Senha: <input type="password" placeholder="Digite sua senha" required name="senha" id="input-senha"></label>
+  <br>
+  <br>
+  <label for="news-mangas">
+  <input type="checkbox" name="news" id="news-mangas">Desejo receber atualizações dos lançamentos
+  </label>
+  <br>
+  <br>
+  <label for="lembrar">
+    <input type="checkbox" name="lembrar" id="">Lembre-me
+    </label>
+  <br>
+  <br>
+</form> 
+<form action="">
+  <input type="text" placeholder="vamos" id="inputVamos">
+  <button type="submit" id="buttonSub">Vamos lá!</button> 
+  <p id="nameUser"></p>
+</form>
+
+<script>
+  const button = document.querySelector('button');
+  const input = document.querySelector('#buttonSub')
+  const nameUser = document.querySelector('#nameUser')
+
+  button.addEventListener('click', (event) => {
+      event.preventDefault();
+      console.log(input.value);
+  })
+
+</script>
+</body>
+</html>
