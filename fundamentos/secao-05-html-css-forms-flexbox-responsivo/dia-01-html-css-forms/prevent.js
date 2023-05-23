@@ -1,3 +1,5 @@
+const validate = new window.JustValidate('#form');
+
 // SELETORES
 const inputText = document.querySelector("#input-text");
 const inputCheckbox = document.querySelector("#input-checkbox");

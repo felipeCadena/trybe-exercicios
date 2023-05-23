@@ -4,3 +4,7 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
+
+.mb-3 {
+  width: 80px;
+}
