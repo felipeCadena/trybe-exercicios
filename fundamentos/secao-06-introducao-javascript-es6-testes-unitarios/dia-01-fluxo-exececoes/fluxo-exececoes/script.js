@@ -98,7 +98,6 @@ const clients = [
 const findPersonByName = (nome) => {
   let clientsName;
   try {
-
     for (let i = 0; i < clients.length; i += 1) {
       if (clients[i].name === nome) {
         clientsName = clients[i];
@@ -110,14 +109,43 @@ const findPersonByName = (nome) => {
   } catch (err) {
     throw err.message;
   }
+
+  return `Destinatário: ${nome}. Endereço: ${clientsName.address.street}, ${clientsName.address.number}, ${clientsName.address.neighborhood}, ${clientsName.address.city} - ${clientsName.address.state}. CEP: ${clientsName.address.cep}`
 };
 
-findPersonByName('João da Silva')
-
 const findPersonByPosition = (position) => {
-  // seu código aqui
+  try {
+
+    for (let i = 0; i < clients.length; i += 1) {
+      if (clients[i]) {
+        return `Cliente: ${clients[position].name}. email: ${clients[position].email}`
+      } 
+    }
+    if (!clients[i]) {
+      throw new Error("Posição inválida, tente novamente");
+    }
+  } catch (err) {
+    throw err.message;
+  }
 };
 
 const findPeopleByState = (state) => {
-  // seu código aqui
-};
+  let stateName;
+  try {
+    for (let i = 0; i < clients.length; i += 1) {
+      if (clients[i].address.state === state) {
+        clients[i].address.state = stateName;
+        return clients[i].name
+      } 
+    }
+
+    if (!stateName) {
+      throw new Error("Ops, nenhuma pessoa mora nesse estado, tente outro");
+    }
+
+  } catch (err) {
+    throw err.message;
+  }
+}
+
+console.log(findPeopleByState('SP'));
