@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Requisito 1
+      const body = document.querySelector('body');
+      const h1 = document.createElement('h1');
+      h1.innerText = 'TrybeTrip - Agência de Viagens';
+      body.appendChild(h1);
+
+      //Requisito 2
+      const main = document.createElement('main');
+      main.classList.add('main-content');
+      body.appendChild(main);
+
+      //Requisito 3
+      const section = document.createElement('section');
+      section.classList.add('center-content');
+      main.appendChild(section);
+
+      //Requisito 4
+      const p = document.createElement('p');
+      p.innerText = 'A melhor agência de viagens do Brasil!';
+      section.appendChild(p);
+
+      //Requisito 5
+      const sectionLeft = document.createElement('section');
+      sectionLeft.classList.add('left-content');
+      main.appendChild(sectionLeft);
+
+      //Requisito 6
+      const sectionRight = document.createElement('section');
+      sectionRight.classList.add('right-content');
+      main.appendChild(sectionRight);
+
+      //Requisito 7
+      const img = document.createElement('img');
+      img.classList.add('small-image');
+      sectionLeft.appendChild(img);
+      img.src = 'https://picsum.photos/200';
+
+      //Requisito 8
+      const listUL = document.createElement('ul');
+      sectionRight.appendChild(listUL);
+      let arrayNumbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i = 0; i < arrayNumbers.length; i += 1) {
+        const list = document.createElement('li');
+        listUL.appendChild(list);
+        list.innerText = arrayNumbers[i];
+      }  
+      
+      //Requisito 9
+      for (let i = 0; i < 3; i += 1) {
+        const h3 = document.createElement('h3');
+        main.appendChild(h3);
+        h3.classList.add('description')
+      }
+
+      //Requisito 10
+      h1.classList.add('title')
+
+      //Requisito 11
+      main.removeChild(sectionLeft);
+
+      //Requisito 12
+      sectionRight.style.marginRight = 'auto';
+
+      //Requisito 13
+      section.style.backgroundColor = 'green';
+
+      //Requisito 14
+      listUL.removeChild(listUL.lastChild)
+      listUL.removeChild(listUL.lastChild)
+
+
+    </script>
+  </body>
+</html>
