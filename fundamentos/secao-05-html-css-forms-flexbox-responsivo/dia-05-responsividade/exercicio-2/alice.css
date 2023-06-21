@@ -1,0 +1,49 @@
+/* 1.1 – Crie três versões de layout diferentes para essa página
+Crie um layout para telas pequenas;
+Crie um layout para telas médias;
+Crie um layout para telas grandes.
+Anota aí 📝: Preste atenção no conteúdo da página e pense em como mostrá-lo em cada um dos tamanhos de tela:
+
+Onde a lista de capítulos deve estar posicionada?
+Como a história deve ser mostrada?
+Como o cabeçalho deve ser posicionado?
+O que fazer com as informações do autor em cada tamanho de tela?
+Talvez seja necessário alterar um pouco o HTML. Caso altere, adicione elementos para facilitar a estilização ou mude um bloco de lugar dentro da página. */
+
+html {
+  box-sizing: border-box;
+}
+
+/* *, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+nav ul {
+  background-color: rgb(253, 218, 172);
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.aside-one h2, .aside-two h2 {
+  text-align: center;
+}
