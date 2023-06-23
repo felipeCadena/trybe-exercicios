@@ -1,0 +1,19 @@
+{
+  "name": "dia-03-pratica-casa-cambio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.3",
+    "sweetalert2": "^11.7.12",
+    "vite": "^4.3.9"
+  }
+}
