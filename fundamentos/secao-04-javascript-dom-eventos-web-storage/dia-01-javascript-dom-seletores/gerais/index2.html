@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="two">Dê uma cor para este parágrafo!</p>
+
+      <h4 id="subtitle">Subtítulo</h4>
+
+      <p id="second-paragraph" class="two">Segundo parágrafo!</p>
+
+    </header>
+
+    <script>
+
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      const two = document.getElementsByClassName('two');
+      two[0].style.color = 'blue';
+
+      document.getElementsByTagName('h4')[0].style.color = 'pink';
+
+      // document.querySelector: retorna o primeiro elemento e apenas um. Trabalha com seletores CSS = #exemplo ou .elemento
+
+      //document.querySelector('.two p') = selecionamos apenas a id two na tag p
+
+      //document.querySelectorAll = retorna uma array com todos os elementos com aquela tag, id ou class. Retorna uma node.list como array
+
+
+
+    </script>
+  </body>
+</html>
